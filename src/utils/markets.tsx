@@ -1,6 +1,5 @@
 import {
   Market,
-  MARKETS,
   OpenOrders,
   Orderbook,
   TOKEN_MINTS,
@@ -41,12 +40,24 @@ import { WRAPPED_SOL_MINT } from '@project-serum/serum/lib/token-instructions';
 import { Order } from '@project-serum/serum/lib/market';
 import BonfidaApi from './bonfidaConnector';
 
+import MARKETS_RAW from '../data/markets.json';
+
 // Used in debugging, should be false in production
 const _IGNORE_DEPRECATED = false;
+
+const MARKETS: MarketInfo[] = MARKETS_RAW.map((m) => {
+  return {
+    ...m,
+    address: new PublicKey(m.address),
+    programId: new PublicKey(m.programId),
+  }
+});
 
 export const USE_MARKETS: MarketInfo[] = _IGNORE_DEPRECATED
   ? MARKETS.map((m) => ({ ...m, deprecated: false }))
   : MARKETS;
+
+console.log(USE_MARKETS);
 
 export function useMarketsList() {
   return USE_MARKETS.filter(
