@@ -5,7 +5,11 @@ import {
   ChartingLibraryWidgetOptions,
   IChartingLibraryWidget,
 } from '../../charting_library';
-import { useMarket, USE_MARKETS } from '../../utils/markets';
+import {
+  DEFAULT_MARKET_NAME,
+  useMarket,
+  USE_MARKETS,
+} from '../../utils/markets';
 import * as saveLoadAdapter from './saveLoadAdapter';
 import { flatten } from '../../utils/utils';
 import { BONFIDA_DATA_FEED } from '../../utils/bonfidaConnector';
@@ -35,7 +39,7 @@ export interface ChartContainerState {}
 export const TVChartContainer = () => {
   // let datafeed = useTvDataFeed();
   const defaultProps: ChartContainerProps = {
-    symbol: 'BTC/USDC',
+    symbol: DEFAULT_MARKET_NAME,
     // @ts-ignore
     interval: '60',
     auto_save_delay: 5,
@@ -68,7 +72,7 @@ export const TVChartContainer = () => {
       symbol:
         USE_MARKETS.find(
           (m) => m.address.toBase58() === market?.publicKey.toBase58(),
-        )?.name || 'SRM/USDC',
+        )?.name || DEFAULT_MARKET_NAME,
       // BEWARE: no trailing slash is expected in feed URL
       // tslint:disable-next-line:no-any
       // @ts-ignore
