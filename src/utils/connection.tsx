@@ -7,8 +7,8 @@ import { ConnectionContextValues, EndpointInfo } from './types';
 
 export const ENDPOINTS: EndpointInfo[] = [
   {
-    name: 'MRGN mainnet-beta',
-    endpoint: 'https://mrgn.rpcpool.com/',
+    name: 'mainnet-beta',
+    endpoint: 'https://api.mainnet-beta.solana.com',
     custom: false,
   },
   { name: 'localnet', endpoint: 'http://127.0.0.1:8899', custom: false },
