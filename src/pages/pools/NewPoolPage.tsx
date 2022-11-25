@@ -37,7 +37,7 @@ const AddRemoveTokenButtons = styled.div`
   margin-bottom: 16px;
 `;
 
-const FAKE_POOL = "3FE2g3cadTJjN3C7gNRavwnv7Yh9Midq7h9KgTVUE7tR"
+// const FAKE_POOL = "3FE2g3cadTJjN3C7gNRavwnv7Yh9Midq7h9KgTVUE7tR"
 const SIMPLE_POOL_PROGRAM_ID = '71JS8f7y7ASMbuuSMCVG7a3qDdcVco2qYD6bMJeZqUCm';
 const ADMIN_CONTROLLED_POOL_PROGRAM_ID =
   'WvmTNLpGMVbwJVYztYL4Hnsy82cJhQorxjnnXcRm3b6';

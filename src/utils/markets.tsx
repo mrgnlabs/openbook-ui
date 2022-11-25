@@ -50,7 +50,7 @@ const MARKETS: MarketInfo[] = MARKETS_RAW.map((m) => {
     ...m,
     address: new PublicKey(m.address),
     programId: new PublicKey(m.programId),
-  }
+  };
 });
 
 export const USE_MARKETS: MarketInfo[] = _IGNORE_DEPRECATED
@@ -188,7 +188,7 @@ const _SLOW_REFRESH_INTERVAL = 5 * 1000;
 const _FAST_REFRESH_INTERVAL = 1000;
 
 export const DEFAULT_MARKET = USE_MARKETS.find(
-  ({ name, deprecated }) => name === 'SRM/USDT' && !deprecated,
+  ({ name, deprecated }) => name === 'SOL/USDC' && !deprecated,
 );
 
 export function getMarketDetails(

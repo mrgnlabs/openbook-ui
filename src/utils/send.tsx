@@ -834,8 +834,9 @@ async function awaitTransactionSignatureConfirmation(
         console.log('Timed out for txid', txid);
         reject({ timeout: true });
       }, timeout);
+      let subscriptionId;
       try {
-        connection.onSignature(
+        subscriptionId = connection.onSignature(
           txid,
           (result) => {
             console.log('WS confirmed', txid, result);
@@ -853,6 +854,8 @@ async function awaitTransactionSignatureConfirmation(
         done = true;
         console.log('WS error in setup', txid, e);
       }
+      if (subscriptionId)
+        await connection.removeSignatureListener(subscriptionId);
       while (!done) {
         // eslint-disable-next-line no-loop-func
         (async () => {

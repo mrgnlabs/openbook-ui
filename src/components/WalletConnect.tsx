@@ -66,6 +66,7 @@ export default function WalletConnect() {
           return (
             <Button
               size="large"
+              key={adapter.name}
               type={adapter.name === wallet?.adapter.name ? 'primary' : 'ghost'}
               onClick={onClick}
               icon={
