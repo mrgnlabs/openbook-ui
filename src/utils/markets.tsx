@@ -57,8 +57,6 @@ export const USE_MARKETS: MarketInfo[] = _IGNORE_DEPRECATED
   ? MARKETS.map((m) => ({ ...m, deprecated: false }))
   : MARKETS;
 
-console.log(USE_MARKETS);
-
 export function useMarketsList() {
   return USE_MARKETS.filter(
     ({ name, deprecated }) =>
