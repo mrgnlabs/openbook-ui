@@ -1,5 +1,4 @@
-[
-  {
+[{
     "name": "SOL/USDC",
     "programId": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
     "deprecated": false,
@@ -70,5 +69,11 @@
     "programId": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
     "deprecated": false,
     "address": "B2na8Awyd7cpC59iEU43FagJAPLigr3AP3s38KM982bu"
+  }, 
+  {
+    "name": "ARB/USDC",
+    "programId": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+    "deprecated": false,
+    "address": "5xCudgPvVetTL3M4ExtPuAFTnCr2hdQ3cte9LhGAuBee"
   }
 ]
