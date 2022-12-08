@@ -13,8 +13,14 @@
   {
     "name": "ETH/USDC",
     "programId": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
-    "deprecated": false,
+    "deprecated": true,
     "address": "FZxi3yWkE5mMjyaZj6utmYL54QQYfMCKMcLaQZq4UwnA"
+  },
+  {
+    "name": "ETH/USDC",
+    "programId": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+    "deprecated": false,
+    "address": "BbJgE7HZMaDp5NTYvRh5jZSkQPVDTU8ubPFtpogUkEj4"
   },
   {
     "name": "ETH/USDT",
@@ -57,6 +63,12 @@
     "programId": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
     "deprecated": false,
     "address": "9Lyhks5bQQxb9EyyX55NtgKQzpM4WK7JCmeaWuQ5MoXD"
+  },
+  {
+    "name": "mSOL/SOL",
+    "programId": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+    "deprecated": false,
+    "address": "AYhLYoDr6QCtVb5n1M5hsWLG74oB8VEz378brxGTnjjn"
   },
   {
     "name": "SLND/USDC",
