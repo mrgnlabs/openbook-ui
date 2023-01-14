@@ -87,5 +87,11 @@
     "programId": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
     "deprecated": false,
     "address": "5xCudgPvVetTL3M4ExtPuAFTnCr2hdQ3cte9LhGAuBee"
+  },
+  {
+    "name": "BONK/USDC",
+    "programId": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+    "deprecated": false,
+    "address": "8PhnCfgqpgFM7ZJvttGdBVMXHuU4Q23ACxCvWkbs1M71"
   }
 ]
